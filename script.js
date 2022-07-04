@@ -22,7 +22,7 @@
         courseList.innerHTML = '';
         // Фильтр по input.value
         const filteredList = courses.filter((el) => {
-            if(priceTo.value > null) {
+            if(priceTo.value) {
                 return el.prices[0] >= priceFrom.value && el.prices[0] <= priceTo.value && el.prices[1] <= priceTo.value
             } else {
                 return el.prices[0] >= priceFrom.value
